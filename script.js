@@ -27,8 +27,10 @@ function showNotes() {
   notesObj.forEach(function(element, index) {
     html += `
 			<div class="note">
-				<p id="ad">${index + 1}). ${element}</p>
-    <button type="button" id="clear"> remove</button>
+        <div><p><b>Note ${index + 1}</b></p></div>
+				<p id="element">${element}</p>
+    <button class="button" type="button" id="delbutton"onclick="deleteNote(this.id)" >Delete Note</button>
+   
 			</div>
 		`;
   });
@@ -39,6 +41,17 @@ function showNotes() {
     notesElm.innerHTML = `Nothing to show! Use "Add Note" section above to add notes.`;
   }
 }
-function delelement() {
+function deleteNote(index) {
 
+  let notes = localStorage.getItem("notes");
+  if (notes == null) {
+    notesObj = [];
+  } else {
+    notesObj = JSON.parse(notes);
+  }
+
+  notesObj.splice(index, 1);
+  localStorage.setItem("notes", JSON.stringify(notesObj));
+  showNotes();
 }
+
