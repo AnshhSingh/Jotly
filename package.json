@@ -4,7 +4,7 @@
   "main": "Note-making web app using Vanilla JavaScript and some express.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "bash node ."
   },
   "repository": {
     "type": "git",
