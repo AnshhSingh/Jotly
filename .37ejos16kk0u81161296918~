@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jotly</title>
+  <link rel="stylesheet" href="/style">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Note Taking App</h1>
+    <form class="note-form">
+      <label for="note">Add a note:</label>
+
+      <textarea id="notetxt" name="notetxt"></textarea>
+      <button type="button" id="addBtn"> Add Note</button>
+    </form>
+    <div id="addnote">
+
+    </div>
+  </div>
+  <script src="/script"></script>
+</body>
+
+</html>

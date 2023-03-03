@@ -1,0 +1,67 @@
+{
+  "_from": "crypto.js",
+  "_id": "crypto.js@3.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-2fuPYOT/fXWbXeOekSg5ao6Mi/+yOn2A0+iSmeh4SAwhwjuZiLXvrQePYiNwEG21sM8Ysd8MQrNrJAC1FbuwNA==",
+  "_location": "/crypto.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "crypto.js",
+    "name": "crypto.js",
+    "escapedName": "crypto.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/crypto.js/-/crypto.js-3.1.0.tgz",
+  "_shasum": "868f5bd191e6131c533f4f12ee9a1f8a29771295",
+  "_spec": "crypto.js",
+  "_where": "/home/runner/Jotly",
+  "author": {
+    "name": "yutent",
+    "email": "yutent.io@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bytedo/crypto.js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "原生crypto加密模块的二次封装,简化常用加密函数的使用",
+  "devDependencies": {},
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "homepage": "https://github.com/bytedo/crypto.js#readme",
+  "keywords": [
+    "md5",
+    "sha1",
+    "sha256",
+    "hmac",
+    "base64",
+    "fivejs",
+    "crypto",
+    "crypto-js",
+    "crypto.js"
+  ],
+  "main": "dist/index.js",
+  "name": "crypto.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytedo/crypto.js.git"
+  },
+  "scripts": {
+    "start": "node ./build.js"
+  },
+  "version": "3.1.0"
+}

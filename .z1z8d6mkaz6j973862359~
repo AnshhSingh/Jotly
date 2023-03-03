@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jotly</title>
+
+</head>
+<div class="title">
+  <h1>Jotly</h1>
+</div>
+<style>
+  body {
+    background-color: #4f4f4f;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .login,
+  .signup {
+    background-color: #8f8f8f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px ##0a0a0a;
+    background-color: #bababa;
+
+  }
+
+  form input[type="submit"] {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="login">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login">
+      </form>
+    </div>
+    <div class="signup">
+      <h2>Signup</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" id="fullname">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" name="confirmpassword" id="confirmpassword">
+        <input type="submit" value="Signup">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
